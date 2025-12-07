@@ -26,5 +26,22 @@ services:
     depends_on:
       - postgres
 
+  webapp:
+    build:
+      context: ./webapp-nextjs
+    container_name: webapp
+    restart: unless-stopped
+    environment:
+      PGHOST: postgres_db
+      PGPORT: 5432
+      PGUSER: postgres
+      PGPASSWORD: mysecretpassword
+      PGDATABASE: movies_db
+      NEXT_PUBLIC_PORT: 3001
+    ports:
+      - "3001:3001"
+    depends_on:
+      - postgres
+
 volumes:
   pgdata:

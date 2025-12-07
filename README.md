@@ -32,3 +32,6 @@
 
     docker exec -it postgres_db psql -U postgres -d movies_db -f data/load.sql
 
+7. Go to pgadmin http://localhost:8080/
+
+8. open http://localhost:3001 in your browser to see the web app (its included when compose up the docker)

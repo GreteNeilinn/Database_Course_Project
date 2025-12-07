@@ -1,0 +1,46 @@
+# Node and package files
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Next.js build output
+.next/
+out/
+
+# Env files
+.env
+.env.local
+.env.*.local
+
+# Logs
+logs/
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+*.iml
+
+# Python
+__pycache__/
+*.py[cod]
+venv/
+env/
+
+# Docker
+docker-compose.override.yml
+Dockerfile.*
+
+# Build outputs
+dist/
+build/
+
+# Misc
+*.sqlite
+*.sql.gz
